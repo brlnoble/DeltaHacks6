@@ -16,8 +16,8 @@ body {
 }
 
 /*------------------------Main Head----------------------*/
-.welcome {
-    padding-top: 10%;
+.cover {
+    /*padding-top: 10%;*/
     position: relative;
     color: #FFF;
     font-size: 5vh;
@@ -27,7 +27,7 @@ body {
     justify-content: center;
 }
 
-.welcome > img {
+.cover > img {
     box-shadow: 0 0 20px #000;
     border-radius: 50px;
 }
