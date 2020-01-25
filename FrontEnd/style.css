@@ -17,7 +17,6 @@ body {
 
 /*------------------------Main Head----------------------*/
 .cover {
-    /*padding-top: 10%;*/
     position: relative;
     color: #FFF;
     font-size: 5vh;
@@ -40,15 +39,15 @@ body {
     background: #B7261B;
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);
     z-index: 100; /*keep it on top of everything else*/
-    height: 8vh;
+    height: 10vh;
     border-bottom-style: solid;
     border-bottom-width: 4px;
     border-color: #F27066;
 }
 
-@media only screen and (max-height: 525px) { /*keep nav bar from shrinking too much*/
+@media only screen and (max-height: 600px) { /*keep nav bar from shrinking too much*/
     .nav {
-        height: 42px;
+        height: 60px;
     }
 }
 
@@ -86,6 +85,13 @@ li:hover { /*increase text size when hovering*/
 a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.signIn {
+    padding: 10px;
+    border-style: solid;
+    border-color: #FFF;
+    border-radius: 10px;
 }
 
 /*-------------------------Cover-------------------------*/
