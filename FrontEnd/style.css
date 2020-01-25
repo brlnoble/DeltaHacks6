@@ -12,6 +12,7 @@ body {
     font-family: Arial;
     background-color: #556;
     height: 100vh;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 /*------------------------Main Head----------------------*/
@@ -24,7 +25,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Comfortaa', sans-serif;
 }
 
 .welcome > img {
@@ -37,13 +37,13 @@ body {
     position: fixed; /*navigation always at top of screen*/
     top: 0;
     width: 100%;
-    background: #117464;
+    background: #B7261B;
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%);
     z-index: 100; /*keep it on top of everything else*/
     height: 8vh;
     border-bottom-style: solid;
     border-bottom-width: 4px;
-    border-color: #3D9A8A;
+    border-color: #F27066;
 }
 
 @media only screen and (max-height: 525px) { /*keep nav bar from shrinking too much*/
@@ -118,9 +118,9 @@ a {
 }
 /*--------------------------Grid-------------------------*/
 :root {
-    --c1: 20; /*46*/
-    --c2: 50; /*60*/
-    --c3: 50; /*58*/
+    --c1: 50; /*46*/
+    --c2: 20; /*60*/
+    --c3: 20; /*58*/
 }
 
 .grid-wrapper {
@@ -139,7 +139,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #3D9A8A;
+    background-color: #C7675F;
     padding: 20px;
     margin: 20px;
     margin-top: 0;
@@ -173,7 +173,7 @@ a {
 .box:hover {
     transform: scale(1.15);
     /*box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.4) 0px -10px 20px;*/
-    background-color: #ACA;
+    background-color: #BE9F9D;
 }
 
 .box:active {
