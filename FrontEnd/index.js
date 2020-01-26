@@ -15,7 +15,7 @@ app.get("/", function(req, res){
 });
 
 app.post("/", function(req, res){
-    var result = req.body.lattitude + "," + req.body.longitude;
+    /*var result = req.body.lattitude + "," + req.body.longitude;
     var link = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + result + "&key=AIzaSyBbljhuTItFNRxgG3pGm4kF2P7Aeu7gBOI";
     request(link, function(error, response, body){
         var data = JSON.parse(body);
@@ -25,7 +25,8 @@ app.post("/", function(req, res){
                 var out = data.results[0].address_components[i].long_name;
             }
         }
-        res.send(out);
-    });
+    });*/
+    var location = req.body.location;
+    res.sendFile(__dirname + "/index.html");
 });
 
