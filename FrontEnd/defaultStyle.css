@@ -1,6 +1,7 @@
 html { /*hide scroll wheel*/
     overflow: scroll;
     overflow-x: hidden;
+    transition: all 0.3s ease;
 }
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
@@ -25,6 +26,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#title {
+    transition: all 2s ease;
 }
 
 .cover > img {
