@@ -3,7 +3,7 @@
 <head>
     <title>Feed Me</title>
     <link rel="stylesheet" type="text/css" href="./defaultStyle.css">
-    <link rel="stylesheet" type="text/css" href="./userStyle.css">
+    <link rel="stylesheet" type="text/css" href="./registerStyle.css">
     <link rel="icon" href="img/chiliPeppa.png">
     <style>@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 </style>
@@ -13,7 +13,7 @@
         <ul class="nav-items">
             <li><a href="index.html">About</a></li>
             <li><a href="">Meals</a></li>
-            <li><a href="">Local Shops</a></li>
+            <li><a href="localShops.html">Local Shops</a></li>
             <li class="push"><div class="signIn"><a href="newUser.html">Sign In</a></li></div>
         </ul>
     </nav>
@@ -21,21 +21,20 @@
         <div class="container parallax">
             <div class="cover" style="padding-top: 10%;">
                 <img src="img/chiliPeppa.png" height="100px">
-                <h1>Welcome to FeedMe</h1>
+                <h1 id="title">Welcome to FeedMe</h1>
             </div>
                 <h3 class="cover">Let's get you started...</h3>
             </div>
         <div class="mainBlock">
-            <div class="box"><img src="img/Icons/icons8-bread-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-ice-cream-cone-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-lunchbox-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-noodles-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-peach-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-pizza-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-the-toast-96.png"></div>
-            <div class="box"><img src="img/Icons/icons8-poultry-leg-96.png"></div>
+            <form class="formElements formBlock">
+                First Name: <input type="text" name="firstName" size="20" required> <br> <br>
+                Last Name: <input type="text" name="lastName" size="20" required> <br> <br>
+                Email: <input type="email" name="usrEmail" size="20" required> <br> <br>
+                Password: <input type="password" minlength="8" maxlength="16" name="usrPassword" size="20" required> <br> <br>
+                <br> <br> <input type="submit" value="Register" class="submitButton">
+            </form>
         </div>
-        <footer>Footer</footer>
+        <footer>Deltahacks VI Project : Powered with love</footer>
     </div>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.submitButton {
+    left: 50%;
+    border-color: transparent;
+    background-color: #C7675F;
+    padding: 30px;
+    cursor:pointer;
+    color:#FFF;
+    font-size:1.5em;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 1s ease;
+    --notchSize: 20px;
+  /*cut the edges slightly*/
+    clip-path: 
+        polygon(
+            0% var(--notchSize), 
+            var(--notchSize) 0%, 
+            calc(100% - var(--notchSize)) 0%, 
+            1000% var(--notchSize), 
+            100% calc(100% - var(--notchSize)), 
+            calc(100% - var(--notchSize)) 100%, 
+            var(--notchSize) 100%, 
+            -1000% calc(100% - var(--notchSize))
+        );
+}
+
+.formBlock {
+    left: 50%;
+    border-color: transparent;
+    background-color: rgba(199, 103, 95, .2);
+    padding: 30px;
+    color:#FFF;
+    font-size:1.5em;
+    text-align: center;
+    border-radius: 20px;
+    transition: all 1s ease;
+    --notchSize: 30px;
+  /*cut the edges slightly*/
+    clip-path: 
+        polygon(
+            0% var(--notchSize), 
+            var(--notchSize) 0%, 
+            calc(100% - var(--notchSize)) 0%, 
+            1000% var(--notchSize), 
+            100% calc(100% - var(--notchSize)), 
+            calc(100% - var(--notchSize)) 100%, 
+            var(--notchSize) 100%, 
+            -1000% calc(100% - var(--notchSize))
+        );
+}
+
+@media only screen and (max-width: 600px) { /*resize text in nav bar if screen is too small*/
+    .formBlock {
+        background-color: transparent;
+        --notchSize: 0;
+    }
+}
+
+.submitButton:hover {
+    transform: scale(1.15);
+    background-color: #BE9F9D;
+}
+
+.formElements {
+    display: grid;
+    grid-auto-columns: 400px;
+    justify-content: center;
+}
