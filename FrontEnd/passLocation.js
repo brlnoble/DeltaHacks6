@@ -14,3 +14,5 @@ function showPosition(position) {
     document.getElementById("lonIn").value = position.coords.longitude;
     document.getElementById("latIn").value = position.coords.latitude;
 }
+
+document.getElementById("curDate").value = Date()[4]+Date()[5]+Date()[6];
