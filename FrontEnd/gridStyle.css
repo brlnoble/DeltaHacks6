@@ -80,3 +80,16 @@ hr {
     background-color: #FFF;
     height: 2px;
 }
+
+:root {
+    --c1: 50; 
+    --c2: 20; 
+    --c3: 20; 
+    
+    --c12: 70;
+    --c22: 20;
+    --c32: 20;
+}
+
+.mainBlock {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c12),var(--c22),var(--c32),1),  rgba(var(--c12),var(--c22),var(--c32),1),  rgba(var(--c12),var(--c22),var(--c22),1),  rgba(var(--c1),var(--c2),var(--c3),1), rgba(var(--c1),var(--c2),var(--c3),1));
