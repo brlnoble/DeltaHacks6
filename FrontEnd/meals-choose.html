@@ -8,7 +8,7 @@
     <style>@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 </style>
 </head>
-<body>
+<body onload="imgFunction()">
     <nav><div class="nav">
         <ul class="nav-items">
             <li><a href="index.html">About</a></li>
@@ -68,5 +68,13 @@
             </div>
         <footer>Deltahacks VI Project : Powered with love and caffeine</footer>
     </div>
+         <script type="text/javascript" src="data.json"></script> <!--data file-->
+         <script>
+            function  imgFunction() {
+                document.getElementById("meal1").src = JSON.parse(data[0].image);
+                document.getElementById("meal2").src = JSON.parse(data[1].image);
+                document.getElementById("meal3").src = JSON.parse(data[2].image);
+            }
+         </script>
 </body>
 </html>
