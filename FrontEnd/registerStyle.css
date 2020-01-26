@@ -27,7 +27,7 @@
 .formBlock {
     left: 50%;
     border-color: transparent;
-    background-color: rgba(199, 103, 95, .2);
+    background-image: linear-gradient(rgba(199, 103, 95, .4), rgba(50, 20, 20, 1), rgba(50, 20, 20, 1));
     padding: 30px;
     color:#FFF;
     font-size:1.5em;
