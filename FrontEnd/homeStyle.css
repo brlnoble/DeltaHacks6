@@ -3,15 +3,21 @@
     padding-top: 100px;
 }
 
-.aboutText {
+/*.aboutText {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
+}*/
 
 .aboutTextImage {
-    box-shadow: 5px 5px 20px #000;
+    left: 50%;
+    margin-right: auto;
+    min-width: 100%;
+    overflow-x: hidden;
+    z-index: -1;
+    margin-top: -150px;
+    margin-bottom: -100px;
 }
 
 .textBlock {

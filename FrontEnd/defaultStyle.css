@@ -30,7 +30,9 @@ body {
 .cover > img {
     box-shadow: 0 0 20px #000;
     border-radius: 50px;
-    margin-right: 20px;
+    margin-right: 2vw;
+    width: 12vh;
+    height: 12vh;
 }
 
 /*-------------------------Nav Bar-----------------------*/
