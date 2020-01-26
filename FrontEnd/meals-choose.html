@@ -68,13 +68,31 @@
             </div>
         <footer>Deltahacks VI Project : Powered with love and caffeine</footer>
     </div>
-         <script type="text/javascript" src="data.json"></script> <!--data file-->
+         <!--<script type="text/javascript" src="data.json"></script>--> <!--data file-->
          <script>
             function  imgFunction() {
-                document.getElementById("meal1").src = JSON.parse(data[0].image);
+                /*document.getElementById("meal1").src = JSON.parse(data[0].image);
                 document.getElementById("meal2").src = JSON.parse(data[1].image);
-                document.getElementById("meal3").src = JSON.parse(data[2].image);
-            }
+                document.getElementById("meal3").src = JSON.parse(data[2].image);*/
+                var fs = require("fs");
+                var file = fs.readFileSync("./recipe.txt");
+                var rawFile = new XMLHttpRequest();
+                rawFile.open("GET", file, false);
+                rawFile.onreadystatechange = function ()
+                {
+                    if(rawFile.readyState === 4)
+                    {
+                        if(rawFile.status === 200 || rawFile.status == 0)
+                        {
+                            var allText = rawFile.responseText;
+                            console.log(allText);
+                            alert(allText);
+                        }
+                    }
+                }
+                rawFile.send(null);
+                    }
+            
          </script>
 </body>
 </html>
