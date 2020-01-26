@@ -88,7 +88,7 @@ li {
     transition: all 0.3s ease;
 }
 
-li:hover { /*increase text size when hovering*/
+nav li:hover { /*increase text size when hovering*/
     font-size: 120%;
 }
 

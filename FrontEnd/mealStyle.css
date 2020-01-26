@@ -1,25 +1,29 @@
 .mainBlock {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1), rgba(var(--c1),var(--c2),var(--c3),1)); /*gradient*/
     /*background-color: #2e3c3a;*/
-    padding: 30px;
+    padding: 80px;
     padding-bottom: 50px;
+    text-align: center;
     
+}
+
+.recipe {
+    width: 700px;
 }
 
 .results {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, .7fr)); /*300px or full screen if not enough room*/
     justify-content: center;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    
 }
 
 .box { /*image with text beneath*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     background-color: #C7675F;
-    width: 400px;
+    width: 700px;
     padding: 20px;
     margin: 20px;
     cursor:pointer;
@@ -43,7 +47,12 @@
         );
 }
 
-.box > img { /*image formatting*/
+.imgAndTitle {
+    float: left;
+    padding-right: 20px;
+}
+
+.dishImage { /*image formatting*/
     /*width: 50%;
     height: 50%;*/
     padding: 50px;
@@ -53,7 +62,7 @@
 }
 
 .box:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
     /*box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.4) 0px -10px 20px;*/
     background-color: #BE9F9D;
 }
