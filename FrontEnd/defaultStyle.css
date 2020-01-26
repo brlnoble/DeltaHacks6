@@ -13,6 +13,7 @@ body {
     background-color: #655;
     height: 100vh;
     font-family: 'Comfortaa', sans-serif;
+    color: white;
 }
 
 /*------------------------Main Head----------------------*/
@@ -129,11 +130,7 @@ a {
     --c3: 20; /*58*/
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, .7fr)); /*300px or full screen if not enough room*/
-    justify-content: center;
-    grid-gap: 60px;
+.mainBlock {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1),  rgba(var(--c1),var(--c2),var(--c3),1), rgba(var(--c1),var(--c2),var(--c3),1)); /*gradient*/
     /*background-color: #2e3c3a;*/
     padding: 200px;
@@ -141,7 +138,6 @@ a {
     
 }
 
-.
 /*-------------------------Footer------------------------*/
 footer {
     text-align: center;

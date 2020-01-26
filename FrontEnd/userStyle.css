@@ -5,7 +5,7 @@
     --c3: 20; /*58*/
 }
 
-.grid-wrapper {
+.mainBlock {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, .7fr)); /*300px or full screen if not enough room*/
     justify-content: center;
