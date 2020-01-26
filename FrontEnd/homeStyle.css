@@ -4,8 +4,10 @@
 }
 
 .aboutTextImage {
+    position: static;
     left: 50%;
-    min-width: 100%;
+    min-width: 90vw;
+    max-width: 1000px;
     overflow-x: hidden;
     z-index: -1;
     margin-top: -150px;

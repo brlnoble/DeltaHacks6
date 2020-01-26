@@ -129,7 +129,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1; /*make it the farthest object back*/
-    background-image: url("img/spicesAndStuff.jpeg");
+    background-image: url("img/AdobeStock_248929619.jpeg");
     /*align-items: center;*/
 }
 /*--------------------------Grid-------------------------*/

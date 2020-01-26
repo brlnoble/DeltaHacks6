@@ -26,7 +26,6 @@
     width: 700px;
     padding: 20px;
     margin: 20px;
-    cursor:pointer;
     color:#FFF;
     font-size:1.5em;
     text-align: center;
@@ -59,16 +58,6 @@
     width: 312px;
     height: 231px;
     /*margin-bottom: 40px;*/
-}
-
-.box:hover {
-    transform: scale(1.05);
-    /*box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.4) 0px -10px 20px;*/
-    background-color: #BE9F9D;
-}
-
-.box:active {
-    transform: rotate(2deg);
 }
 
 .hdr {
